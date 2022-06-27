@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
     height: auto;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .logo {
     width: 200px;
@@ -12,7 +14,11 @@
     background-color: #ffffff;
     background-color: rgba( 255, 255, 255, 0 );
 }
+.left-item {
+    text-align: left;
+}
 .right-item {
+    text-align: right;
     margin-right: 60px;
 }
 .navbar li {
@@ -33,7 +39,20 @@
 	left: 50%;
 	transform: translate( -50%, -50% );
 }
+.product-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.product {
+    width: 18rem;
+}
 .product-list img {
     width: 369.33px;
     height: 369.33px;
+    margin: 20px;
+}
+@media screen and (max-width: 768px) {
+    
 }
