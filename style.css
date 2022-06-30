@@ -20,11 +20,13 @@
 .right-item {
     text-align: right;
     margin-right: 60px;
+    float: right;
 }
 .navbar li {
     list-style: none;
     float: left;
     margin-left: 30px;
+    white-space: nowrap;
 }
 .navbar li a {
     text-decoration: none;
@@ -39,20 +41,18 @@
 	left: 50%;
 	transform: translate( -50%, -50% );
 }
-.product-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 .product {
-    width: 18rem;
+    width: 339.46px;
+    height: 339.46px;
+    margin: 10px 0 0 70px;
 }
-.product-list img {
-    width: 369.33px;
-    height: 369.33px;
-    margin: 20px;
+.card a {
+    text-decoration: none;
+    color: black;
 }
-@media screen and (max-width: 768px) {
-    
+.card p {
+    display: none;
+}
+.card a:hover {
+    opacity: 0.7;
 }

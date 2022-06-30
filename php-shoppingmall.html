@@ -11,32 +11,38 @@
 </head>
 <body>
   <!-- navbar 만들기 -->
-  <nav class="navbar">
-    <ul class="navbar-item">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
       <img class="logo" src="img/logo.png">
-        <ul class="left-item">
-          <li class="SHOP">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
             <a class="nav-link" href="#">SHOP</a>
           </li>
-          <li class="ABOUT">
+          <li class="nav-item">
             <a class="nav-link" href="#">ABOUT</a>
           </li>
-          <li class="GALLERY">
+          <li class="nav-item">
             <a class="nav-link" href="#">GALLERY</a>
           </li>
-        </ul>
-        <ul class="right-item">
-          <li class="Search">
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Search</a>
           </li>
-          <li class="Log in">
+          <li class="nav-item">
             <a class="nav-link" href="#">Log in</a>
           </li>
-          <li class="Cart">
+          <li class="nav-item">
             <a class="nav-link" href="#">Cart</a>
           </li>
         </ul>
-      </ul>
+      </div>
+    </div>
   </nav>
   <!-- 슬라이드쇼 이미지 넣어주기 -->
   <div class="slideshow">
@@ -72,62 +78,193 @@
     <h1>THE JOY FOUND IN DAILY LIFE</h1>
   </div>
   <!-- 상품 나열 -->
-  <table class="product-list">
-    <tr>
-      <td><a href="#" class="product"><img class="wambet_poo" src="img/wambet_poo.jpg"></a></td>
-      <td><a href="#" class="product"><img class="poo" src="img/poo.jpg"></a></td>
-      <td><a href="#" class="product"><img class="rainbow_poo" src="img/rainbow_poo.jpg"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#" class="product"><img class="dust" src="img/dust.jpg"></a></td>
-      <td><a href="#" class="product"><img class="dustdust" src="img/dustdust.jpg"></a></td>
-      <td><a href="#" class="product"><img class="dustdustdust" src="img/dustdustdust.jpg"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#" class="product"><img class="small_sea" src="img/small_sea.jpg"></a></td>
-      <td><a href="#" class="product"><img class="nimo" src="img/nimo.jpg"></a></td>
-      <td><a href="#" class="product"><img class="dori" src="img/dori.jpg"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#" class="product"><img class="sushi" src="img/sushi.jpg"></a></td>
-      <td><a href="#" class="product"><img class="soysauce_carp" src="img/soysauce_carp.jpg"></a></td>
-      <td><a href="#" class="product"><img class="kimbap" src="img/kimbap.jpg"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#" class="product"><img class="blue_snail" src="img/blue_snail.jpg"></a></td>
-      <td><a href="#" class="product"><img class="white_snail" src="img/white_snail.jpg"></a></td>
-      <td><a href="#" class="product"><img class="red_snail" src="img/red_snail.jpg"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#" class="product"><img class="red_coral" src="img/red_coral.jpg"></a></td>
-      <td><a href="#" class="product"><img class="yellow_coral" src="img/yellow_coral.jpg"></a></td>
-      <td><a href="#" class="product"><img class="green_coral" src="img/green_coral.jpg"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#" class="product"><img class="sea_tangle" src="img/sea_tangle.jpg"></a></td>
-      <td><a href="#" class="product"><img class="pine" src="img/pine.jpg"></a></td>
-      <td><a href="#" class="product"><img class="bamboo" src="img/bamboo.jpg"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#" class="product"><img class="black_bear" src="img/black_bear.jpg"></a></td>
-      <td><a href="#" class="product"><img class="rice_cake" src="img/rice_cake.jpg"></a></td>
-      <td><a href="#" class="product"><img class="bi&shi&bro" src="img/bi&shi&bro.jpg"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#" class="product"><img class="initial_keyring" src="img/initial_keyring.jpg"></a></td>
-      <td><a href="#" class="product"><img class="small_okchun" src="img/small_okchun.jpg"></a></td>
-      <td><a href="#" class="product"><img class="small_okchun" src="img/okchun.jpg"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#" class="product"><img class="hamburger" src="img/hamburger.jpg"></a></td>
-      <td><a href="#" class="product"><img class="pizza" src="img/pizza.jpg"></a></td>
-      <td><a href="#" class="product"><img class="quokka" src="img/quokka.jpg"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#" class="product"><img class="xmas_tree" src="img/xmas_tree.jpg"></a></td>
-      <td><a href="#" class="product"><img class="small_santahat" src="img/small_santahat.jpg"></a></td>
-    </tr>
-  </table>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/wambet_poo.jpg"><p>웜벳과 응가<br/>29,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/poo.jpg"><p>응가<br/>19,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/rainbow_poo.jpg"><p>무지개 응가<br/>29,800원</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/dust.jpg"><p>먼지<br/>15,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/dustdust.jpg"><p>먼지먼지<br/>19,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/dustdustdust.jpg"><p>먼지먼지먼지<br/>22,800원</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/small_sea.jpg"><p>작은 바다 SET<br/>144,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/nimo.jpg"><p>흰동가리<br/>23,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/dori.jpg"><p>남양쥐돔<br/>23,800원</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/sushi.jpg"><p>초밥도시락<br/>23,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/soysauce_carp.jpg"><p>간장붕어와 친구들<br/>20,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/kimbap.jpg"><p>김밥<br/>20,800원</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/blue_snail.jpg"><p>파랑 갯민숭달팽이<br/>25,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/white_snail.jpg"><p>흰 갯민숭달팽이<br/>25,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/red_snail.jpg"><p>흰줄보라 갯민숭달팽이<br/>25,800원</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/red_coral.jpg"><p>측맵시산호<br/>23,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/yellow_coral.jpg"><p>깃산호<br/>23,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/green_coral.jpg"><p>청각<br/>23,800원</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/sea_tangle.jpg"><p>다시마 형제<br/>29,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/pine.jpg"><p>소나무<br/>22,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/bamboo.jpg"><p>죽순<br/>23,800원</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/black_bear.jpg"><p>반달가슴곰<br/>28,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/rice_cake.jpg"><p>꿀떡<br/>23,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/bi&shi&bro.jpg"><p>비&새&브<br/>23,800원</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/initial_keyring.jpg"><p>모여라 미물들(이니셜 키링)<br/>23,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/small_okchun.jpg"><p>작은 옥춘<br/>19,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/okchun.jpg"><p>옥춘<br/>22,800원</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/hamburger.jpg"><p>햄버거 파우치<br/>52,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/pizza.jpg"><p>피자 파우치<br/>32,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/quokka.jpg"><p>쿼카<br/>38,800원</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/xmas_tree.jpg"><p>크리스마스 소나무<br/>27,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <a href="#"><img class="product" src="img/small_santahat.jpg"><p>작은 산타모자<br/>7,800원</p></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        
+      </div>
+    </div>
+  </div>
   <!-- footer 작성하기 -->
   <footer>
     <div class="left-panel">
